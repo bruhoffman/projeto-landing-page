@@ -4,107 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>4-Confort</title>
 </head>
 
 <body>
-    <nav>
-        <img src="img/logo.avif" alt="4Confort" width="100" height="100">
-        <div>
-            <ul>
-                <li><a href="#nossosprodutos">Nossos Produtos</a></li>
-                <li><a href="#quemsomos">Quem somos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <button>Login</button>
+    <header>
+        <a href="#sessao-quem-somos">
+            <img id="logo" src="img/logo.png" alt="4Confort">
+        </a>
+        <div id="div-menu">
+            <menu id="menu">
+                <li><a class="a-link" href="#sessao-produtos">Nossos Produtos</a></li>
+                <li><a class="a-link" href="#sessao-quem-somos">Quem somos</a></li>
+                <li><a class="a-link" href="#sessao-contato">Contato</a></li>
+                <li><a class="a-link" href="#sessao-duvidas">Dúvidas</a></li>
+            </menu>
         </div>
-    </nav>
-    <div>
-        <div>
-            <h2 id="quemsomos">Quem Somos</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis temporibus aspernatur,
-                doloremque reprehenderit odio adipisci aliquid quisquam hic itaque totam dignissimos voluptas dolore
-                sequi ratione voluptatum corrupti repudiandae deserunt.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis temporibus aspernatur,
-                doloremque
-                reprehenderit odio adipisci aliquid quisquam hic itaque totam dignissimos voluptas dolore sequi
-                ratione voluptatum
-                corrupti repudiandae deserunt.</p>
+        <div id="login">
+            <input class="button" id="button-login" type="button" value="Login" />
         </div>
-        <img src="img/tenis_1.jpg" alt="Tenis Branco" width="300" height="300">
-    </div>
-    <div>
-        <h2 id="nossosprodutos">Nossos Produtos</h2>
-        <div>
+    </header>
+    <main>
+        <section id="sessao-quem-somos">
+            <div id="div-quem-somos">
+                <div>
+                    <h2>Quem Somos</h2>
+                </div>
+                <div class="p-quem-somos">
+                    <p>4Confort nasceu para revolucionar o conforto e o estilo nos ambientes de trabalho modernos.
+                        Nossos
+                        tênis são projetados para profissionais que atuam em empresas modernas, combinando design
+                        minimalista com tecnologias de ponta para proporcionar bem-estar durante toda a jornada.</p>
+                </div>
+                <div class="p-quem-somos">
+                    <p>vendas exclusivamente online, oferecemos uma experiência de compra ágil e personalizada, levando
+                        até
+                        você o calçado perfeito para te acompanhar do escritório ao happy hour.</p>
+                </div>
+            </div>
+            <div id="div-img-quem-somos">
+                <img src="img/tenis_0.jpg" alt="Tenis Branco" width="600" height="350">
+            </div>
+        </section>
+        <section id="sessao-produtos">
+            <div id="div-h2-nossos-produtos">
+                <h2>Nossos Produtos</h2>
+            </div>
+            <div id="div-img-produtos">
+                <div class="produto">
+                    <div>
+                        <img class="img-produto" src="img/tenis_1.jpg" alt="Tenis Branco">
+                    </div>
+                    <div>
+                        <p class="p-descricao-produto"> Old Skool na cor branca, um modelo icônico e atemporal,
+                            conhecido pela sua simplicidade e elegância. confeccionado em lona resistente, com a
+                            característica listra lateral que se tornou uma marca registrada da 4Confort.</p>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div>
+                        <img class="img-produto" src="img/tenis_2.jpg" alt="Tenis com destalhes verdes, branco e preto">
+                    </div>
+                    <div>
+                        <p class="p-descricao-produto">4Confort Air é um moderno e sofisticado, com uma combinação de
+                            cores que mescla tons neutros como branco e preto com detalhes em verde oliva, criando um
+                            visual elegante e atemporal, combinando com diversas peças. </p>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div>
+                        <img class="img-produto" src="img/tenis_3.jpg" alt="Tenis com destalhes verdes, branco e preto">
+                    </div>
+                    <div>
+                        <p class="p-descricao-produto">4Confort Air MaxPro é uma versão específica que apresenta um
+                            design moderno e sofisticado, com uma combinação de cores que mescla tons escuros como preto
+                            e verde com detalhes em rosa claro, cria um visual elegante e contemporâneo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sessao-contato">
+            <div id="div-h2-contato">
+                <h2>Contato</h2>
+            </div>
+            <form>
+                <div>
+                    <label for="nome">Nome</label>
+                </div>
+                <div>
+                    <input class="campo-formulario" type="text" id="nome" name="nome">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                </div>
+                <div>
+                    <input class="campo-formulario" type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="telefone">Telefone</label>
+                </div>
+                <div>
+                    <input class="campo-formulario" type="tel" id="telefone" name="telefone">
+                </div>
+                <div>
+                    <input class="button" type="button" value="Cadastrar Contato" />
+                </div>
+            </form>
+        </section>
+        <section id="sessao-duvidas">
+            <h2>FAQ / Perguntas Frequentes</h2>
+            <h4>P: Como consulto a Nota fiscal Eletrônica (NF-e)?</h4>
+            <p> R: Você pode consultar a nota fiscal eletrônica do seu pedido, pelo site da Receita
+                Federal:https://www.nfe.fazenda.gov.br/</p>
+            <h4>P: Ainda não recebi meu pedido, o que fazer?</h4>
+            <p>R: Se você não recebeu sua compra, primeiro confirme a previsão de entrega em “Meus Pedidos”. É só
+                acessar seu cadastro.</p>
+            <h4>P: Como acompanhar a entrega do meu pedido?</h4>
+            <p>R: Acessar a página “Meus Pedidos”, selecionar sua compra e então, acompanhar o envio. Lá você vai
+                encontrar todo o passo a passo do pedido até a realização da entrega. Após o produto ser entregue para a
+                transportadora, será habilitado o link do rastreamento, abaixo do ícone “Pedido em separação”.</p>
+        </section>
+        <section id="sessao-footer">
             <div>
-                <img src="img/tenis_1.jpg" alt="Tenis Branco" width="150" height="150">
+                <a href="#">
+                    <img id="facebook" src="img/icones/facebook.svg" alt="facebook">
+                </a>
+                <a href="#">
+                    <img id="instagram" src="img/icones/instagam.svg" alt="instagam">
+                </a>
+                <a href="#">
+                    <img id="x-twitter" src="img/icones/x.svg" alt="x-twitter">
+                </a>
+                <a href="#">
+                    <img id="youtube" src="img/icones/youtube.svg" alt="youtube">
+                </a>
+                <a href="#">
+                    <img id="tiktok" src="img/icones/tiktok.svg" alt="tiktok">
+                </a>
+                <a href="#">
+                    <img id="snapchat" src="img/icones/snapchat.svg" alt="snapchat">
+                </a>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptatem voluptate eius
-                    doloremque et obcaecati numquam expedita, pariatur sunt placeat.</p>
+                <p id="p-footer">Telefone de contato: 0800-070-7070</p>
             </div>
-        </div>
-        <div>
-            <div>
-                <img src="img/tenis_2.webp" alt="Tenis Cinza" width="150" height="150">
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptatem voluptate eius
-                    doloremque et obcaecati numquam expedita, pariatur sunt placeat.</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="img/tenis_3.jpg" alt="Tenis Marron" width="150" height="150">
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptatem voluptate eius
-                    doloremque et obcaecati numquam expedita, pariatur sunt placeat.</p>
-            </div>
-        </div>
-    </div>
-    <div>
-        <h2 id="contato">Contato</h2>
-        <form>
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone">
-
-            </div>
-            <div>
-                <button>Cadastrar contato</button>
-            </div>
-        </form>
-    </div>
-    <div>
-        <h2 id="faq">FAQ / Perguntas Frequentes</h2>
-        <h4>Como consulto a Nota fiscal Eletrônica (NF-e)?</h4>
-        <p> Você pode consultar a nota fiscal eletrônica do seu pedido, pelo site da Receita Federal:
-            https://www.nfe.fazenda.gov.br/</p>
-        <h4>Ainda não recebi meu pedido, o que fazer?</h4>
-        <p>Se você não recebeu sua compra, primeiro confirme a previsão de entrega em “Meus Pedidos”. É só acessar seu
-            cadastro.</p>
-        <h4>Como acompanhar a entrega do meu pedido?</h4>
-        <p>Acessar a página “Meus Pedidos”, selecionar sua compra e então, acompanhar o envio. Lá você vai encontrar
-            todo o passo a
-            passo do pedido até a realização da entrega. Após o produto ser entregue para a transportadora, será
-            habilitado o link
-            do rastreamento, abaixo do ícone “Pedido em separação”.</p>
-    </div>
+        </section>
+    </main>
 </body>
-
-<footer>
-    <div>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-    </div>
-    <div>
-        <p>Telefone de contato: 0800-070-7070</p>
-    </div>
-</footer>
-
 </html>
